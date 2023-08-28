@@ -3,24 +3,22 @@
 namespace app\controllers;
 
 use Yii;
-use yii\web\Response;
 use app\models\TestPeople;
 use app\models\TestPhonesNumber;
 use yii\rest\ActiveController;
-use yii\data\ActiveDataProvider;
 
 class PhoneBookController extends ActiveController{
 
     public $modelClass = 'app\models\TestPeople';
 
-    public function actionIndex()
-    {
-        $model = TestPeople::find()->all();
+    // public function actionIndex()
+    // {
+    //     $model = TestPeople::find()->all();
 
-        return $this->render('index', [
-        'model' => $model,
-    ]);
-    }
+    //     return $this->render('index', [
+    //     'model' => $model,
+    // ]);
+    // }
     
 
     public function actions()
